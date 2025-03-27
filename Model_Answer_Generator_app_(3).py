@@ -570,9 +570,9 @@ def generate_highlighted_scantron(correct_answers, model_code, answer_bubbles, e
     if model_code in exam_code_coords:
         x1, y1, x2, y2 = exam_code_coords[model_code]
         # Mark the two exam code coordinates with red circles
-        circle1 = patches.Circle((x1, y1), radius=11, facecolor='red', edgecolor='red',
+        circle1 = patches.Circle((x1, y1), radius=11, facecolor='black', edgecolor='black',
                                  linewidth=2, alpha=0.85)
-        circle2 = patches.Circle((x2, y2), radius=11, facecolor='red', edgecolor='red',
+        circle2 = patches.Circle((x2, y2), radius=11, facecolor='black', edgecolor='black',
                                  linewidth=2, alpha=0.85)
         ax.add_patch(circle1)
         ax.add_patch(circle2)
